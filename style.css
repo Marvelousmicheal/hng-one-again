@@ -1,3 +1,151 @@
-body{
-    background-color: pink;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+main{
+    width: 100%;
+    height: 30rem;
+    background: radial-gradient(circle at center, #FFFFFF, #A8D8E9);
+}
+.container {
+ margin-top: 5rem;
+  width: inherit;
+  z-index:2;
+ 
+position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container .text-holder {
+  width: 450px;
+}
+.container .text-holder h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+}
+.container .text-holder p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+.container img {
+  width: 300px;
+  border-radius: 4px;
+}
+.shape{
+    position: absolute;
+    top: 30%;
+    width: 100vw;
+    display: flex;
+    padding: 0 3rem;
+    z-index:1;
+   
+}
+.shape img{
+    width: 50%;
+    height: 280px;
+    filter: grayscale(100%);
+
+}
+
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link-section > div{
+    background-color: #A8D8E9 ;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+    font-weight: 600;
+   
+}
+section > img{
+    position: absolute;
+    width: 200px;
+}
+.img-one{
+    top: 5%;
+    left: 0%;
+    filter: blur(5px);
+}
+
+.img-one:nth-child(2){
+    top: 50%;
+    left: 20%;
+}
+.img-one:nth-child(3){
+    top: 50%;
+    left: 50%;
+}
+.img-one:nth-child(4){
+    top: 20%;
+    left: 80%;
+}
+.img-two{
+    top: 5%;
+    right: 0%;
+    filter: blur(5px);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+footer h3{
+    padding: 0 1.5rem; 
+    background-color: #A8D8E9;
+    transform: rotate(-12deg);
+    color: white;
+    
+}
+
+
+
+
+/* Media query for tablets (landscape and portrait) */
+@media (max-width: 768px) {
+  
+}
+
+/* Media query for mobile devices (portrait) */
+@media (max-width: 480px) {
+
+ 
+    main{
+        width: 100vw;
+        height: 76vh;
+    }
+   .container{
+    flex-direction: column;
+   }
+   .container .text-holder {
+  width: auto;
+  text-align: center;
+}
 }

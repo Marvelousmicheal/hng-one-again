@@ -30,7 +30,7 @@ const currentTime = new Date()
     const minutes = currentTime.getMinutes()
     const seconds = currentTime.getSeconds()
 
-    const time = `${hours}:${minutes} : ${seconds}`
+    const time = `${hours} : ${minutes} : ${seconds}`
 
     timeDiv.textContent = `The Time is ${time}`
 
