@@ -25,13 +25,13 @@ const currentTime = new Date()
     todaysDay.textContent = `Today is ${Day}` ;
 
     /////////////////////////////////
-
-    const hours = currentTime.getHours()
-    const minutes = currentTime.getMinutes()
-    const seconds = currentTime.getSeconds()
-
-    const time = `${hours} : ${minutes} : ${seconds}`
-
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const milliseconds = currentTime.getMilliseconds();
+    
+    const time = `${hours}:${minutes}:${seconds}:${milliseconds}`;
+    
     timeDiv.textContent = `The Time is ${time}`
 
 
