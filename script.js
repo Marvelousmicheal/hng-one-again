@@ -16,23 +16,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const todaysDay = document.querySelector(".days-of-week");
     const timeDiv = document.querySelector(".time-of-the-day")
     const currentDate = new Date();
-const currentTime = new Date()
-
-
-
+    
+    
+    
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const Day = daysOfWeek[currentDate.getDay()];
     todaysDay.textContent = `Today is ${Day}` ;
-
+    
     /////////////////////////////////
+    
+    setInterval(()=>{
+    const currentTime = new Date()
+
     const hours = currentTime.getHours();
     const minutes = currentTime.getMinutes();
     const seconds = currentTime.getSeconds();
-    const milliseconds = currentTime.getMilliseconds();
+ 
     
-    const time = `${hours}:${minutes}:${seconds}:${milliseconds}`;
-    
+    const time = `${hours}:${minutes}:${seconds}`;
     timeDiv.textContent = `The Time is ${time}`
+}
+
+,1000)
+
+
 
 
    
